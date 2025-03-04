@@ -33,7 +33,7 @@ const Login = () => {
   return (
     <div className="container">
       <form>
-        <h1>Login</h1>
+        <h1 className="text-blue-300">Login</h1>
 
         <div className="form-container">
           <div className="field">
