@@ -53,14 +53,18 @@ input {
   padding-top: 20px;
 }
 button {
-  width: 20%;
-  padding: 10px;
+  /*width: 50%;
+  */padding: 10px;
   background-color: #007bff;
   color: white;
   border: none;
   border-radius: 5px;
   cursor: pointer;
   font-size: 1rem;
+  -webkit-border-radius:;
+  -moz-border-radius:;
+  -ms-border-radius:;
+  -o-border-radius:;
 }
 
 button:hover {
