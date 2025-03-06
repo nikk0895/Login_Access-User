@@ -31,17 +31,18 @@ const Login = () => {
   };
 
   return (
-    <div className="container">
-      <form>
-        <h1 className="text-blue-300">Login</h1>
-
-        <div className="form-container">
-          <div className="field">
-            <label>Username</label>
-            <br />
+    <div className="flex items-center justify-center min-h-screen bg-gray-100">
+      <div className="w-full max-w-md p-6 bg-white rounded-2xl shadow-lg">
+        <h2 className="text-2xl font-semibold text-center text-gray-700 mb-6">
+          Login
+        </h2>
+        <form>
+          <div className="mb-4">
+            <label className="block text-gray-600 mb-1">User Name</label>
             <input
               type="text"
               placeholder="Enter your Name"
+              className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
               value={userName}
               required
               onChange={(e) => {
@@ -49,13 +50,12 @@ const Login = () => {
               }}
             />
           </div>
-
-          <div className="field">
-            <label>Password</label>
-            <br />
+          <div className="mb-4">
+            <label className="block text-gray-600 mb-1">Password</label>
             <input
               type="password"
               placeholder="Enter your Password"
+              className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
               value={password}
               required
               onChange={(e) => {
@@ -63,21 +63,30 @@ const Login = () => {
               }}
             />
           </div>
-          <button onClick={handleSubmit}>Submit</button>
-          <br />
-          <div className="anchor">
-            <a id="forget-password" href="#">
-              Forget Password?
+          <div className="flex justify-between items-center mb-4">
+            <a href="#" className="text-sm text-blue-500 hover:underline">
+              Forgot password?
             </a>
-            <p>
-              Not a Member?{" "}
-              <a id="signup" href="/signup">
-                Signup Now
-              </a>
-            </p>
           </div>
+          <div className="flex justify-between">
+            <button
+              className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 hover:bg-blue-600"
+              onClick={handleSubmit}
+            >
+              Login
+            </button>
+          </div>
+        </form>
+        <div className="text-center mt-4">
+          <p className="text-sm">
+            Not a member?
+            <a href="/signup" className="text-blue-500 hover:underline">
+              {" "}
+              Sign up
+            </a>
+          </p>
         </div>
-      </form>
+      </div>
     </div>
   );
 };

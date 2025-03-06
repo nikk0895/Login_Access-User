@@ -20,11 +20,11 @@ const Success = () => {
     navigate("/");
   };
   return (
-    <div className="success">
-      <h1>
+    <div className="m-5">
+      <h1 className="text-[50px] font-bold">
         Welcome <span>{user.name}</span>
       </h1>
-      <div className="logo">
+      <div className="float-right">
         <button onClick={logout}>Logout</button>
       </div>
       <div className="my">

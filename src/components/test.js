@@ -22,52 +22,57 @@ const Test = () => {
   };
 
   return (
-    <div style={{ marginLeft: "370px" }}>
-      <h2>Student Education Detail</h2>
-      <form onSubmit={handleSave} className="space-y-3">
-        <input
-          type="text"
-          name="name"
-          placeholder="Student Name"
-          value={formData.name}
-          onChange={handleChange}
-          required
-        />
-        <input
-          type="text"
-          name="degree"
-          placeholder="Degree"
-          value={formData.degree}
-          onChange={handleChange}
-          required
-        />
-        <input
-          type="text"
-          name="institution"
-          placeholder="Institution"
-          value={formData.institution}
-          onChange={handleChange}
-          required
-        />
-        <input
-          type="number"
-          name="graduationYear"
-          placeholder="Graduation Year"
-          value={formData.graduationYear}
-          onChange={handleChange}
-          required
-        />
-        <input
-          type="text"
-          name="gpa"
-          placeholder="GPA"
-          value={formData.gpa}
-          onChange={handleChange}
-        />
-        <button type="submit" style={{ marginLeft: "130px", width: "200px" }}>
-          Save
-        </button>
-      </form>
+    // <div style={{ marginLeft: "370px" }}>
+    <div className="mt-2">
+      <h2 className="underline flex justify-center">
+        Student Education Detail
+      </h2>
+      <div className="flex justify-center">
+        <form onSubmit={handleSave} className="w-[700px] ">
+          <input
+            type="text"
+            name="name"
+            placeholder="Student Name"
+            value={formData.name}
+            onChange={handleChange}
+            required
+          />
+          <input
+            type="text"
+            name="degree"
+            placeholder="Degree"
+            value={formData.degree}
+            onChange={handleChange}
+            required
+          />
+          <input
+            type="text"
+            name="institution"
+            placeholder="Institution"
+            value={formData.institution}
+            onChange={handleChange}
+            required
+          />
+          <input
+            type="number"
+            name="graduationYear"
+            placeholder="Graduation Year"
+            value={formData.graduationYear}
+            onChange={handleChange}
+            required
+          />
+          <input
+            type="text"
+            name="gpa"
+            placeholder="GPA"
+            value={formData.gpa}
+            onChange={handleChange}
+          />
+          <button type="submit" style={{ marginLeft: "130px", width: "200px" }}>
+            Save
+          </button>
+        </form>
+      </div>
 
       {/* To Display Users DATA */}
 
